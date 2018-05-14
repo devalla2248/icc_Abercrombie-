@@ -26,5 +26,7 @@ for(var i=0; i<tableLength;i++){
     appendToTable(obj)
 }
 function appendToTable(obj){
-    table.insertAdjacentHTML("afterbegin", "<tr><td><strong>" + obj.name + "</strong> <span>" + obj.date + "</span></td><td><strong>" + obj.assigned +"</strong></td></tr>")
+    table.insertAdjacentHTML("afterbegin", 
+           `<tr><td><strong>${obj.name}</strong><span>${obj.date}
+            </span></td><td><strong>${obj.assigned}</strong></td></tr>`)
 }
