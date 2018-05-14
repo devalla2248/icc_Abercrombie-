@@ -7,6 +7,11 @@ body{
     background-color:#f7f7f7;
 }
 
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
 header>span{
     margin-top: 0;
     padding-top: 0;
@@ -77,7 +82,7 @@ section{
     width: 45.8%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
     section{
         width: 100%;
         margin-bottom: 1%;
