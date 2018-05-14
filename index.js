@@ -9,14 +9,16 @@ var dataToLoad = data,
 submit.addEventListener('click', addTask)
 
 function addTask(){
-    var date = new Date(taskDate.value),
+    if(taskName.value && taskDate.value &&taskAssignedTo.value){
+        var date = new Date(taskDate.value),
         formatedDate =date.getMonth()+"/"+date.getDate()+"/"+date.getFullYear(),
         obj ={
             name: taskName.value,
             date: formatedDate,
             assigned: taskAssignedTo.value
        }
-    appendToTable(obj)
+       appendToTable(obj)
+    }
 }
 
 for(var i=0; i<tableLength;i++){
