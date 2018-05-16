@@ -18,6 +18,8 @@ function addTask(){
             assigned: taskAssignedTo.value
        }
        appendToTable(obj)
+    }else{
+        alert("please fill all the feilds and click submit")
     }
 }
 
@@ -27,6 +29,6 @@ for(var i=0; i<tableLength;i++){
 }
 function appendToTable(obj){
     table.insertAdjacentHTML("afterbegin", 
-           `<tr><td><strong>${obj.name}</strong><span>${obj.date}
+           `<tr><td><strong>${obj.name}</strong><span> ${obj.date}
             </span></td><td><strong>${obj.assigned}</strong></td></tr>`)
 }
